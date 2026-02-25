@@ -12,3 +12,5 @@ libXmu libXmu.i686 libXpm libXpm.i686 libXScrnSaver libXScrnSaver.i686 \
 libnsl libnsl.i686 ncurses-compat-libs ncurses-compat-libs.i686 \
 libxcrypt-compat libxcrypt-compat.i686 glibc-devel glibc-devel.i686 \
 libstdc++ libstdc++.i686 elfutils-libelf-devel libpng12
+sudo dnf install glibc-devel.i686 glibc-devel -y --nogpgcheck
+sudo ln -s /usr/lib64/libdl.so.2 /usr/lib64/libdl.so
