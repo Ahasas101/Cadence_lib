@@ -1,0 +1,14 @@
+sudo dnf config-manager --add-repo=https://dl.rockylinux.org/pub/rocky/8/BaseOS/x86_64/os/ && \
+sudo dnf config-manager --add-repo=https://dl.rockylinux.org/pub/rocky/8/AppStream/x86_64/os/ && \
+sudo dnf config-manager --add-repo=https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+
+
+sudo dnf install -y --nogpgcheck \
+tcsh ksh redhat-lsb-core compat-openssl10 apr-util apr-util.i686 \
+mesa-libGLU mesa-libGLU.i686 mesa-libGL mesa-libGL.i686 \
+libXp libXp.i686 libXrender libXrender.i686 libXext libXext.i686 \
+libXtst libXtst.i686 libXi libXi.i686 libXft libXft.i686 \
+libXmu libXmu.i686 libXpm libXpm.i686 libXScrnSaver libXScrnSaver.i686 \
+libnsl libnsl.i686 ncurses-compat-libs ncurses-compat-libs.i686 \
+libxcrypt-compat libxcrypt-compat.i686 glibc-devel glibc-devel.i686 \
+libstdc++ libstdc++.i686 elfutils-libelf-devel libpng12
